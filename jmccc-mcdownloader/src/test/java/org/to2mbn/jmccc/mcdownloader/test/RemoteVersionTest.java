@@ -77,7 +77,7 @@ public class RemoteVersionTest {
 	}
 
 	@Test
-	public void testSerializion() throws ClassNotFoundException, IOException {
+	public void testSerialization() throws ClassNotFoundException, IOException {
 		SerializationTestUtils.testSerialization(new RemoteVersion(id, uploadTime, releaseTime, type, url));
 	}
 
