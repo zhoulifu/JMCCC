@@ -28,7 +28,7 @@ class LaunchArgument {
 		this.defaultVariables = defaultVariables;
 	}
 
-	public String[] generateCommandline() {
+	public List<String> generateCommandline() {
 		List<String> args = new ArrayList<>();
 		Version version = launchOption.getVersion();
 
@@ -113,7 +113,7 @@ class LaunchArgument {
 			}
 		}
 
-		return args.toArray(new String[args.size()]);
+		return args;
 	}
 
 	private List<String> getFormattedMinecraftArguments() {
